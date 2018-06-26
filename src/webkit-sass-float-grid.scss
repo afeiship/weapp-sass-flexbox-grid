@@ -1,6 +1,3 @@
-// @import 'node_modules/webkit-sass-mixins/dist/webkit-sass-mixins.scss';
-
-
 /*grid Start*/
-@include grid('.col', 24,'');
+@include flexbox-grid('.col', 24,'');
 /*grid End*/
