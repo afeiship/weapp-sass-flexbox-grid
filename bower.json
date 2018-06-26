@@ -1,0 +1,27 @@
+{
+  "name": "weapp-sass-flexbox-grid",
+  "description": "Flexbox grid for weapp.",
+  "main": [
+    "dist/weapp-sass-flexbox-grid.scss",
+    "dist/weapp-sass-flexbox-grid.css"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/weapp-sass-flexbox-grid",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}

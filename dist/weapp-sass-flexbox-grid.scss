@@ -1,0 +1,99 @@
+@import 'node_modules/webkit-sass-mixins/dist/webkit-sass-mixins.scss';
+
+.row,
+.col{
+  box-sizing: border-box;
+}
+
+.row {
+  @include display-flex();
+  width: 100%;
+}
+
+.row-wrap {
+  @include flex-wrap(wrap);
+}
+
+.row-nowrap{
+  @include flex-wrap(nowrap);
+}
+
+.col {
+  @include flex(1);
+  display: block;
+  width: 100%;
+}
+
+//box directions:
+.box-vertical {
+  @include flex-direction(column);
+}
+.box-horizontal {
+  @include flex-direction(row);
+}
+
+
+/* Vertically Align Columns */
+/* .row-* vertically aligns every .col in the .row */
+.row-top {
+  @include align-items(flex-start);
+}
+.row-bottom {
+  @include align-items(flex-end);
+}
+.row-center {
+  @include align-items(center);
+}
+.row-stretch {
+  @include align-items(stretch);
+}
+.row-baseline {
+  @include align-items(baseline);
+}
+
+/* Vertically Row Justify */
+//start end center space-around space-between
+.row-justify-start {
+  @include justify-content(flex-start);
+}
+
+.row-justify-end {
+  @include justify-content(flex-end);
+}
+
+.row-justify-center {
+  @include justify-content(center);
+}
+
+.row-justify-stretch {
+  @include justify-content(stretch);
+}
+
+.row-justify-between {
+  @include justify-content(space-between);
+}
+
+.row-justify-around {
+  @include justify-content(space-around);
+}
+
+/* .col-* vertically aligns an individual .col */
+.col-top {
+  @include align-self(flex-start);
+}
+.col-bottom {
+  @include align-self(flex-end);
+}
+.col-center {
+  @include align-self(center);
+}
+.col-stretch {
+  @include align-self(stretch);
+}
+
+// @import 'node_modules/webkit-sass-mixins/dist/webkit-sass-mixins.scss';
+
+
+/*grid Start*/
+@include grid('.col', 24,'');
+/*grid End*/

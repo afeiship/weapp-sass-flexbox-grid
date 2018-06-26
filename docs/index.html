@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox Grid System</title>
+  <link rel="stylesheet" href="weapp-sass-flexbox-grid.css">
+  <style>
+    .row{
+      margin-bottom: 20px;
+      border:1px solid saddlebrown;
+    }
+    .col:nth-child(2n){
+      background: seagreen;
+    }
+    .col:nth-child(2n-1){
+      background: salmon;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="row">
+      <div class="col">COL-ANY</div>
+      <div class="col">COL-ANY</div>
+      <div class="col">COL-ANY</div>
+      <div class="col">COL-ANY</div>
+      <div class="col">COL-ANY</div>
+    </div>
+
+  <div class="row">
+    <div class="col col-12">COL1-12</div>
+    <div class="col col-12">COL1-12</div>
+  </div>
+
+  <div class="row">
+    <div class="col col-2">COL1-2</div>
+    <div class="col col-22">COL1-22</div>
+  </div>
+
+  <div class="row row-stretch">
+    <div class="col col-4">
+      <p>COL4-24</p>
+      <p>COL4-24</p>
+      <p>COL4-24</p>
+    </div>
+    <div class="col col-4">COL4-24</div>
+    <div class="col col-4">COL4-24</div>
+  </div>
+
+  <div class="row row-center">
+    <div class="col col-4">
+      <p>COL4-24</p>
+      <p>COL4-24</p>
+      <p>COL4-24</p>
+    </div>
+    <div class="col col-4">COL4-24</div>
+    <div class="col col-4">COL4-24</div>
+  </div>
+
+<div class="row row-top">
+  <div class="col col-4">
+    <p>COL4-24</p>
+    <p>COL4-24</p>
+    <p>COL4-24</p>
+  </div>
+  <div class="col col-4">COL4-24</div>
+  <div class="col col-4">COL4-24</div>
+</div>
+
+<div class="row row-bottom">
+  <div class="col col-4">
+    <p>COL4-24</p>
+    <p>COL4-24</p>
+    <p>COL4-24</p>
+  </div>
+  <div class="col col-4">COL4-24</div>
+  <div class="col col-4">COL4-24</div>
+</div>
+
+</body>
+</html>
