@@ -18,6 +18,10 @@
   @include flex-wrap(nowrap);
 }
 
+.column{
+  @include flex(1);
+}
+
 .col {
   @include flex(1);
   display: block;

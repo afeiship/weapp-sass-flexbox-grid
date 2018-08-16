@@ -18,6 +18,10 @@
   @include flex-wrap(nowrap);
 }
 
+.column{
+  @include flex(1);
+}
+
 .col {
   @include flex(1);
   display: block;
@@ -90,9 +94,6 @@
 .col-stretch {
   @include align-self(stretch);
 }
-
-// @import 'node_modules/webkit-sass-mixins/dist/webkit-sass-mixins.scss';
-
 
 /*grid Start*/
 @include flexbox-grid('.col', 24,'');
