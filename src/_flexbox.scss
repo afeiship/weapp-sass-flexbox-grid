@@ -1,7 +1,7 @@
-@import 'node_modules/webkit-sass-mixins/dist/webkit-sass-mixins.scss';
+@import "node_modules/webkit-sass-mixins/dist/webkit-sass-mixins.scss";
 
 .row,
-.col{
+.col {
   box-sizing: border-box;
 }
 
@@ -14,11 +14,11 @@
   @include flex-wrap(wrap);
 }
 
-.row-nowrap{
+.row-nowrap {
   @include flex-wrap(nowrap);
 }
 
-.column{
+.column {
   @include flex(1);
 }
 
@@ -35,7 +35,6 @@
 .box-horizontal {
   @include flex-direction(row);
 }
-
 
 /* Vertically Align Columns */
 /* .row-* vertically aligns every .col in the .row */
@@ -93,4 +92,10 @@
 }
 .col-stretch {
   @include align-self(stretch);
+}
+
+/* extension */
+.row2center {
+  @extend .row;
+  @extend .row-center;
 }
